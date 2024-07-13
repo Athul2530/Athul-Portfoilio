@@ -26,10 +26,10 @@
   --z-back: -10;
   --z-fixed: 100;
 }
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 408px) {
   :root {
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
+    --big-font-size: 1.5rem;
+    --h2-font-size: 2.5rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
@@ -111,8 +111,9 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color:  #9bad;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+
 }
 
 /*===== NAV =====*/
@@ -213,6 +214,7 @@ img {
   right: 0;
   bottom: 0;
   width: 260px;
+  
 }
 .home__blob {
   fill: var(--first-color);
@@ -253,7 +255,7 @@ img {
 
 /* ===== SKILLS =====*/
 #services{
-  color: rgb(203, 22, 239);
+  color: rgb(196, 239, 22);
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
@@ -284,8 +286,8 @@ img {
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s ;
-  box-shadow: 1px 1px 20px #b8df0ef7,
-  1px 1px 40px #b80000f7;
+  box-shadow: 1px 1px 20px #df0ed8f7,
+  1px 1px 40px #00b8b8f7;
 
 }
 .services-list div i{
@@ -299,6 +301,7 @@ img {
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -369,7 +372,7 @@ img {
     width: 200px;
   }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 400px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -386,6 +389,7 @@ img {
   .home__img {
     width: 300px;
     bottom: 25%;
+    margin-left: 300px;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
