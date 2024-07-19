@@ -351,6 +351,10 @@ font-size: 30px;
 .contact__container h1 span{
 color: #0ef;
 }
+.contact-icon{
+  display:flex;
+  flex-direction: row;
+}
 
 /* ===== FOOTER =====*/
 .footer {
