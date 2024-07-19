@@ -156,6 +156,7 @@ img {
 }
 .nav__logo {
   color: var(--second-color);
+  font-size: 25px;
 }
 .nav__toggle {
   color: var(--second-color);
@@ -204,9 +205,17 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
+  color: black;
+  font-size: 35px;
 }
 .home__social-icon:hover {
   color: var(--first-color);
+  box-sizing: 0 0 20px #0ef;
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan,0 0 50px cyan,
+  0 0 100px cyan, 0 0 200px cyan;
+  
+
 }
 .home__img {
   position: absolute;
@@ -284,8 +293,8 @@ img {
   border-right: 10px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s ;
-  box-shadow: 1px 1px 20px #b8df0ef7,
-  1px 1px 40px #b80000f7;
+  box-shadow: 1px 1px 20px #0eb5dff7,
+  1px 1px 40px #b85f00f7;
 
 }
 .services-list div i{
@@ -335,6 +344,13 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+.contact__container h1 {
+color: rgb(218, 14, 218);
+font-size: 30px;
+}
+.contact__container h1 span{
+color: #0ef;
+}
 
 /* ===== FOOTER =====*/
 .footer {
@@ -350,6 +366,7 @@ img {
 }
 .footer__social {
   margin-bottom: var(--mb-4);
+  color: black;
 }
 .footer__icon {
   font-size: 1.5rem;
@@ -368,6 +385,8 @@ img {
   .home__img {
     width: 200px;
   }
+}
+@media  screen and(min-width:300px) {
 }
 @media screen and (min-width: 576px) {
   .home {
