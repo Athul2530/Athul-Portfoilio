@@ -328,9 +328,17 @@ img {
   width: 70px;
   height: 20px;
   background-color: rgb(230, 225, 225);
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 20px;
 }
+.spell{
+  width: 70px;
+  height: 20px;
+  background-color: rgb(230, 225, 225);
+  margin-top: 55px;
+  margin-left: 20px;
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
