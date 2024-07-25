@@ -269,11 +269,14 @@ img {
 }
 .sub-title{
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   padding-bottom: 70px;
 }
 .sub-title span{
-  color: #0ef;
+  color: rgb(209, 25, 223);
+}
+.underline{
+  color: rgb(209, 25, 223);
 }
 .container{
   padding: 90px;
