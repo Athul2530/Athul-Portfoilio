@@ -281,6 +281,79 @@ img {
 .container{
   padding: 90px;
 }
+.skills-dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown-btn {
+  background-color: rgb(12, 173, 213);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  width: 120px;
+}
+
+.dropdown-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid white;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-btn:hover::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.skills-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 160px; /* Adjusted width for smaller screens */
+  background-color: rgb(12, 173, 213);
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px) scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skills-dropdown:hover .skills-list {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.skills-list li {
+  padding: 10px 15px; /* Adjusted padding for smaller screens */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white on hover */
+}
+
 .services-list{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
